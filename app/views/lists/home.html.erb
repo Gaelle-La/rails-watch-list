@@ -1,0 +1,17 @@
+<nav class="navbar bg-body-tertiary" style="height: 8vh">
+  <div class="container-fluid d-flex justify-content-between">
+    <div>
+      <%= link_to root_path, class: "navbar-brand mb-0 h1" do %>
+      <i class="fa-solid fa-film"></i>
+      <% end %>
+    </div>
+    <div>
+      <%= link_to "My Lists", lists_path, style: "text-decoration: none; color: black;" %>
+      <%= link_to "New List", new_list_path, style: "text-decoration: none; color: black;" %>
+    </div>
+  </div>
+</nav>
+<div>
+  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4))">
+  <h1 style="text-align: center;">Watchlist</h1>
+</div>
