@@ -1,4 +1,5 @@
 class List < ApplicationRecord
+  has_one_attached :photo
   # Validations
   validates :name, presence: true, uniqueness: true
 

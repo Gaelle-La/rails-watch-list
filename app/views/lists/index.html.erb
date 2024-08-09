@@ -15,7 +15,7 @@
 <h1 style="text-align: center;">Lists</h1>
 <ul class="p-2">
   <% @lists.each do |list| %>
-    <div class="card-category m-2" style="background-image: image-url('banner_bg.webp');">
+    <div class="card-category m-2" style="background-image: url('<%= url_for(list.photo) %>')">
       <li><%= link_to list.name, list_path(list)%></li>
     </div>
   <% end %>
